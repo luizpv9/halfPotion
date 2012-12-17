@@ -1,6 +1,6 @@
 var actions = {
 
-	"talk" 			: {}, // 
+	"talk" 			: {}, // talk to Durandil (Starts private chat)
 	"say"			: {}, // say Hello everyone!
 	"shout"			: {}, // shout SHUT UP!
 	"tell"			: {}, // tell Durandil It's time to go
