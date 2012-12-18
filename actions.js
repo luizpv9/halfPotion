@@ -1,6 +1,23 @@
 var actions = {
 
-	"talk" 			: {}, // talk to Durandil (Starts private chat)
+	"talk" : 
+	{
+		example: "talk to Durandil",
+		help: "Starts a <b>private chat</b> with the specified player",
+		action: function(command)
+		{
+			if(command.indexOf('to') != -1)
+			{
+				var player = command.replace("talk to", "");
+				// check for player...
+			}
+			else
+			{
+				return this.help;
+			}
+		}
+	}, 
+	
 	"say"			: {}, // say Hello everyone!
 	"shout"			: {}, // shout SHUT UP!
 	"tell"			: {}, // tell Durandil It's time to go
