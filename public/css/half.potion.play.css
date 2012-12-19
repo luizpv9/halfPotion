@@ -1,0 +1,19 @@
+#client-container { border: 1px solid #DEDEDE; width: 100%; overflow: auto;
+  min-height: 300px; font-family: 'Wellfleet', cursive; font-size: 13px;
+  padding: 10px;}
+
+b.blue { color: blue; }
+
+input.chat {
+  width: 79%; 
+  border: 1px solid #B7B7B7;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  height: 20px;
+}
+
+.btn-chat {
+  width: 19%;
+  height: 40px;
+}

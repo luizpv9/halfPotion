@@ -1,0 +1,33 @@
+doctype 5
+html(lang="en")
+  head
+    title halfPotion
+
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js")
+    script(src='js/socket.io.min.js')
+    script(src='js/half.potion.play.js')
+    script(src='bootstrap/js/bootstrap.min.js')
+    link(href='http://fonts.googleapis.com/css?family=Wellfleet', rel='stylesheet')
+    link(rel='stylesheet', href='bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/half.potion.play.css')
+    link(rel='stylesheet', href='bootstrap/css/bootstrap-responsive.min.css')
+
+  body
+    .container
+      .row
+        h1 halfPotion
+        hr
+        #client-container
+          | halfPotion 
+          b client 
+          | version 
+          b.blue 0.0.2
+          br 
+          | --
+          br
+          | Please type your name...
+        input(id='command-input', class='chat')
+
+        script(type='text/javascript')
+          var chat = new hP.Client('client-container', 'command-input');
+          chat.begin();
